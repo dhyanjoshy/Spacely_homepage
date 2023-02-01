@@ -1,0 +1,199 @@
+﻿*
+{
+    margin:0px;
+    padding:0px;
+}
+body{
+    height:100%;
+    width:100%;
+    background-image:url(back.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow:hidden;
+}
+.main {
+    height: 100%;
+    width: 100%;
+
+}
+.main3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url(rays.png);
+    background-position-x: -30%;
+    background-position-y: -50%;
+    animation-name: ray;
+    animation-duration: 2000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: unset;
+}
+.main2 {
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    background-image: url(rays2.png);
+    background-position-x: -30%;
+    background-position-y: -50%;
+    animation-name: ray;
+    animation-duration: 40000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: unset;
+}
+.planets {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url(planets.png);
+    background-position-x: -30%;
+    background-position-y: -50%;
+    animation-name: ray;
+    animation-duration: 20000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: unset;
+}
+.nav {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.00))
+}
+    .nav .container {
+        width: 100%;
+        height:5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav .container .img{
+        margin:0 2%;
+    }
+        .nav .container .img img{
+            width:150px
+        }
+        .nav .container .nav2 {
+            margin: 0 5%;
+        }
+        .nav .container .nav2 ul{
+            display:flex;
+            justify-content:space-evenly;
+        }
+            .nav .container .nav2 ul li {
+                list-style: none;
+                margin: 55px 3%;
+                padding: 0px 20px;
+            }
+                .nav .container .nav2 ul li a {
+                    text-decoration:none;
+                    color: #c672d9;
+                    padding: 5px 5px;
+                    font-family:'Harabara Mais Demo';
+                    transition-duration:.2s;
+
+                }
+                    .nav .container .nav2 ul li a:hover {
+                        border-bottom: solid 2px #ec014c;
+                        color:white;
+                    }
+                .nav .container .nav2 ul li button {
+                    background: #ec014c;
+                    padding: 10px 5px;
+                    color: #c672d9;
+                    padding: 10px 30px;
+                    font-family: 'Harabara Mais Demo';
+                    margin: -8px 0%;
+                    border-radius: 50px;
+                    border-width: 0;
+                    color: white;
+                    transition-duration: .2s;
+                }
+                        .nav .container .nav2 ul li button:hover {
+                            background-color: #ff408f;
+                            color:#550026
+                        }
+.contents{
+    width:100%;
+}
+.contents .container{
+    display:flex;
+    justify-content:space-between;
+    height:93%;
+}
+.contents .container .left{
+    margin:15% 3%;
+    width:50%;
+}
+    .contents .container .left h1{
+        color:white;
+        font-family:"Poppins";
+        font-size:500%;
+        line-height:100%;
+
+    }
+   
+.para{
+    width:50%;
+}
+
+.para p{
+        color:white;
+        font-family:Poppins;
+        font-weight:100;
+        font-size:75%;
+    }
+.contents .container .right {
+    margin: 6% 3%;
+    width: 60%;
+}
+.imgcont{
+    padding:0 10%;
+}
+    .imgcont img {
+        width: 50%;
+        padding: 0 15%;
+        animation-name: rckt;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        transform: scale(1.2) rotateZ(-32deg);
+
+    }
+        
+        @keyframes rckt {
+            0%, 100% {
+        transform: scale(1.2) rotateZ(-32deg);
+    }
+
+    10% {
+        transform: scale(1.25) rotateZ(-28deg);
+    }
+    30% {
+        transform: scale(1.21) rotateZ(-30deg);
+    }
+    40% {
+        transform: scale(1.18) rotateZ(-26deg);
+    }
+    70% {
+        transform: scale(1.21) rotateZ(-39deg);
+    }
+    95% {
+        transform: scale(1.205) rotateZ(-32deg);
+    }
+}
+@keyframes ray {
+    0% {
+        background-position-x: -20%;
+        background-position-y: 0%;
+    }
+
+    100% {
+        background-position-x: -20%;
+        background-position-y: -520000%;
+    }
+
+
